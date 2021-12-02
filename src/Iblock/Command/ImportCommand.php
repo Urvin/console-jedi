@@ -113,5 +113,7 @@ class ImportCommand extends BitrixCommand
                 }
             }
         }
+
+        return 0;
     }
 }

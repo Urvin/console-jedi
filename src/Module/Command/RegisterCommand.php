@@ -36,5 +36,6 @@ class RegisterCommand extends ModuleCommand
         $module = new Module($input->getArgument('module'));
         $module->register();
         $output->writeln(sprintf('registered <info>%s</info>', $module->getName()));
+        return 0;
     }
 }

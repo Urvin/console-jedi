@@ -36,5 +36,6 @@ class RemoveCommand extends ModuleCommand
 		$module = new Module($input->getArgument('module'));
 		$module->remove();
 		$output->writeln(sprintf('removed <info>%s</info>', $module->getName()));
+        return 0;
 	}
 }

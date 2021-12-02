@@ -133,6 +133,8 @@ class InitCommand extends Command
                 $this->$method($input, $output, $settings);
             }
         }
+
+        return 0;
     }
 
     /**

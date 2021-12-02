@@ -36,5 +36,6 @@ class UnregisterCommand extends ModuleCommand
 		$module = new Module($input->getArgument('module'));
 		$module->unRegister();
 		$output->writeln(sprintf('unregistered <info>%s</info>', $module->getName()));
+        return 0;
 	}
 }
